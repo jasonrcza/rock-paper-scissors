@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Rock-Paper-Scissors</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+</head>
+
+<body>
+
+
+</body>
+
+<script>
+    function computerPlay() {
+        let rock = 1;
+        let paper = 2;
+        let scissors = 3;
+        let randomNum = generateRandomNumber(1, 3)
+        console.log(randomNum);
+    };
+
+    const generateRandomNumber = (min, max) => {
+        return Math.floor(Math.random() * (max - min) + min);
+    };
+</script>
